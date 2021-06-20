@@ -3,7 +3,6 @@ the program code are not updated you can decompile it from latest releases.
 
 # CryptoPrivacy
 <a href="https://github.com/MinegamesAdministrationTool/CryptoPrivacy">
-<img src="https://img.shields.io/badge/Framework-.NET-ff69b4"  style="margin-right: 5px">
 <img src="https://img.shields.io/badge/Language-C%23-blueviolet"  style="margin-right:-5px"><br>
 </a>
 
