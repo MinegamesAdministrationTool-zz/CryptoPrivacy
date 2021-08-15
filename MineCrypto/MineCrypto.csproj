@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5ED84233-F14F-4A64-9C9B-A93755819AD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CryptoPrivacy</RootNamespace>
+    <AssemblyName>CryptoPrivacy</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons81_system_task.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AESFileEncryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AESFileEncryptForm.Designer.cs">
+      <DependentUpon>AESFileEncryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AESForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AESForm.Designer.cs">
+      <DependentUpon>AESForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AntiRansomwareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AntiRansomwareForm.Designer.cs">
+      <DependentUpon>AntiRansomwareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base64EncodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base64EncodeForm.Designer.cs">
+      <DependentUpon>Base64EncodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaryForm.Designer.cs">
+      <DependentUpon>BinaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncryptForm.Designer.cs">
+      <DependentUpon>EncryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileHashingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileHashingForm.Designer.cs">
+      <DependentUpon>FileHashingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashingForm.Designer.cs">
+      <DependentUpon>HashingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashingOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashingOptionsForm.Designer.cs">
+      <DependentUpon>HashingOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HexForm.Designer.cs">
+      <DependentUpon>HexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HMACHashingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HMACHashingForm.Designer.cs">
+      <DependentUpon>HMACHashingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreToolsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreToolsForm.Designer.cs">
+      <DependentUpon>MoreToolsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ROT13Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROT13Form.Designer.cs">
+      <DependentUpon>ROT13Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSAEncryptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSAEncryptionForm.Designer.cs">
+      <DependentUpon>RSAEncryptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSAFileEncryptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSAFileEncryptionForm.Designer.cs">
+      <DependentUpon>RSAFileEncryptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanResultsForm.Designer.cs">
+      <DependentUpon>ScanResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripleDESForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripleDESForm.Designer.cs">
+      <DependentUpon>TripleDESForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltimateEncryptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltimateEncryptionForm.Designer.cs">
+      <DependentUpon>UltimateEncryptionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AESFileEncryptForm.resx">
+      <DependentUpon>AESFileEncryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AESForm.resx">
+      <DependentUpon>AESForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AntiRansomwareForm.resx">
+      <DependentUpon>AntiRansomwareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base64EncodeForm.resx">
+      <DependentUpon>Base64EncodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinaryForm.resx">
+      <DependentUpon>BinaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncryptForm.resx">
+      <DependentUpon>EncryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileHashingForm.resx">
+      <DependentUpon>FileHashingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HashingForm.resx">
+      <DependentUpon>HashingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HashingOptionsForm.resx">
+      <DependentUpon>HashingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexForm.resx">
+      <DependentUpon>HexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HMACHashingForm.resx">
+      <DependentUpon>HMACHashingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreToolsForm.resx">
+      <DependentUpon>MoreToolsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ROT13Form.resx">
+      <DependentUpon>ROT13Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSAEncryptionForm.resx">
+      <DependentUpon>RSAEncryptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSAFileEncryptionForm.resx">
+      <DependentUpon>RSAFileEncryptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanResultsForm.resx">
+      <DependentUpon>ScanResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripleDESForm.resx">
+      <DependentUpon>TripleDESForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UltimateEncryptionForm.resx">
+      <DependentUpon>UltimateEncryptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons81_system_task.ico" />
+    <None Include="Resources\Ransomware.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
